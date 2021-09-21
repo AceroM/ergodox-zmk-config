@@ -37,11 +37,11 @@ lto:hold_layer{
                 default {
                         bindings = <
     &bootloader
-    &kp PLUS   &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &none      &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0      &kp MINUS
+    &kp F13    &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &none      &kp NUM_6 &kp NUM_7   &kp NUM_8  &kp NUM_9  &kp NUM_0  &kp F20
     &kp TAB    &kp Q       &kp W      &kp E      &kp R      &kp T      &kp MINUS                                     &kp EQUAL  &kp Y     &kp U       &kp I      &kp O      &kp P      &kp DEL
     &kp ESC    &kp A       &kp S      &kp D      &kp F      &kp G                                                               &kp H     &kp J       &kp K      &kp L      &kp SCLN   &kp SINGLE_QUOTE
-    &kp LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp BSLH                                      &kp GRAVE  &kp N     &kp M       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
-    &kp LWIN   &kp LCTRL   &kp LALT   &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
+    &kp LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp HOME                                      &kp END    &kp N     &kp M       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
+    &kp BSLH   &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
                                                                        &sl NUMPAD &sl MEDIA                 &ls 1 1   &ls 2 2
                                                                                   &kp PG_UP                 &kp PG_UP
                                                             &kp BSPC   &kp LGUI                                       &kp RET    &kp SPACE
