@@ -42,7 +42,7 @@ lto:hold_layer{
     &kp ESC    &kp A       &kp S      &kp D      &kp F      &kp G                                                               &kp H     &kp J       &kp K      &kp L      &kp SCLN   &kp SINGLE_QUOTE
     &kp LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp HOME                                      &kp END    &kp N     &kp M       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
     &kp BSLH   &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
-                                                                       &sl NUMPAD &sl MEDIA                 &ls 1 1   &ls 2 2
+                                                                       &sl NUMPAD &sl MEDIA                 &ls 1 1   &kp RCTRL
                                                                                   &kp PG_UP                 &kp PG_DN
                                                             &kp BSPC   &kp LGUI                                       &kp RET    &kp SPACE
                                                                                   &kp LCTRL                 &kp RALT
