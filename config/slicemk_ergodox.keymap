@@ -1,9 +1,8 @@
 
 #define DEFAULT 0
-#define NUMPAD 1
-#define MEDIA 2
-#define MIRROR_DEFAULT 3
-#define MIRROR_NUMPAD  4
+#define NUMBERS 1
+#define SYMBOLS 2
+#define NUMPAD 3
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -11,26 +10,26 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-behaviors {
-ls:tap_layers{
-  compatible = "zmk,behavior-hold-tap";
-  label="tap_layers2";
-  tapping-term-ms = <150>;
-  #binding-cells = <2>;
-  quick_tap_ms = <0>;
-  flavor = "tap-preferred";
-  bindings = <&mo>,<&tog>;
-};
-lto:hold_layer{
-  compatible = "zmk,behavior-hold-tap";
-  label="hold_layer";
-  tapping-term-ms = <500>;
-  #binding-cells = <2>;
-  quick_tap_ms = <0>;
-  flavor = "tap-preferred";
-  bindings = <&tog>,<&kp>;
-};
-};
+        behaviors {
+                ls:tap_layers{
+                        compatible = "zmk,behavior-hold-tap";
+                        label="tap_layers2";
+                        tapping-term-ms = <150>;
+                        #binding-cells = <2>;
+                        quick_tap_ms = <0>;
+                        flavor = "tap-preferred";
+                        bindings = <&mo>,<&tog>;
+                };
+                        lto:hold_layer{
+                        compatible = "zmk,behavior-hold-tap";
+                        label="hold_layer";
+                        tapping-term-ms = <500>;
+                        #binding-cells = <2>;
+                        quick_tap_ms = <0>;
+                        flavor = "tap-preferred";
+                        bindings = <&tog>,<&kp>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -38,39 +37,24 @@ lto:hold_layer{
                         bindings = <
     &bootloader
     &kp BSLH   &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &kp F1     &kp NUM_6 &kp NUM_7   &kp NUM_8  &kp NUM_9  &kp NUM_0  &kp MINUS
-    &kp TAB    &kp Q       &kp W      &kp E      &kp R      &kp T      &kp F13                                       &kp F20    &kp Y     &kp U       &kp I      &kp O      &kp P      &kp EQUAL
-    &kp ESC    &kp A       &kp S      &kp D      &kp F      &kp G                                                               &kp H     &kp J       &kp K      &kp L      &kp SCLN   &kp SINGLE_QUOTE
-    &kp LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp HOME                                      &kp END    &kp N     &kp M       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
-    &kp DEL    &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
+    &kp TAB    &kp Q       &kp W      &kp F      &kp P      &kp B      &kp F13                                       &kp F20    &kp J     &kp L       &kp U      &kp Y      &kp BSPC   &kp BSPC
+    &kp ESC    &kp A       &kp R      &kp S      &kp T      &kp G                                                               &kp M     &kp N       &kp E      &kp I      &kp O      &kp RET
+    &kp LSHFT  &kp Z       &kp X      &kp C      &kp D      &kp V      &kp HOME                                      &kp END    &kp K     &kp H       &kp CMMA   &kp DOT    &kp RCTRL  &kp RSHFT
+    &kp DEL    &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RCTRL
                                                                        &sl NUMPAD &sl MEDIA                 &ls 1 1   &kp RCTRL
                                                                                   &kp PG_UP                 &kp PG_DN
-                                                            &kp BSPC   &kp LGUI                                       &kp RET    &kp SPACE
-                                                                                  &kp LCTRL                 &kp RALT
+                                                         &sl SYMBOLS   &kp LSHFT                                      &kp SPACE &sl NUMBERS
+                                                                                  &kp LGUI                  &kp RALT
                         >;
                 };
 
-                numpad {
-                        bindings = <
-    &bootloader
-    &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-    &trans   &kp EXCL   &kp AT     &kp LBRC   &kp RBRC   &kp PIPE   &trans                         &trans   &kp COLON  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp ASTRK  &kp F12
-    &kp CAPS &kp POUND  &kp DOLLAR &kp LPAR   &kp RPAR   &kp GRAVE                                          &kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp PLUS   &trans
-    &trans   &kp PRCNT  &kp CARET  &kp LBKT   &kp RBKT   &kp TILDE  &trans                         &trans   &kp PRCNT  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp FSLH   &trans    
-    &trans   &trans     &trans     &trans     &trans                                                                   &kp UP     &kp DOWN   &kp DOT    &kp EQUAL  &trans
-                                                                   &trans &trans      &tog NUMPAD &trans
-                                                                          &trans      &trans
-                                                        &trans     &trans                         &kp RET  &kp NUM_0
-                                                                          &trans      &trans
-                        >;
-                };
-
-                media {
+                numbers {
                         bindings = <
     &bootloader
     &trans         &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 0
     &out OUT_USB   &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 1
-    &out OUT_BLE   &trans   &trans   &trans   &trans   &trans                                       &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 2
-    &bt BT_CLR     &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &kp C_BRI_MAX &bt BT_SEL 3
+    &out OUT_BLE   &kp NUM_1   &kp NUM_1   &kp NUM_1   &kp NUM_1   &kp NUM_1                                       &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 2
+    &bt BT_CLR     &kp NUM_1   &kp NUM_1   &kp NUM_1   &kp NUM_1   &kp NUM_1                     &trans   &trans  &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &kp C_BRI_MAX &bt BT_SEL 3
     &out OUT_TOG   &trans   &trans   &trans   &trans                                                        &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT    &bt BT_SEL 4
                                                                 &trans  &trans     &trans  &tog MEDIA
                                                                         &trans     &trans
@@ -78,21 +62,23 @@ lto:hold_layer{
                                                                         &trans     &trans
                         >;
                 };
-                mirror_default {
+
+                symbols {
                         bindings = <
     &bootloader
-    &kp F20    &kp F18    &kp F19    &kp F21    &kp F22    &kp F17    &none                                        &none    &none   &none   &none   &none   &none   &none
-    &kp ESC    &kp Y      &kp U      &kp I      &kp O      &kp P      &trans                                       &none    &none   &none   &none   &none   &none   &none
-    &kp SCLN   &kp H      &kp J      &kp K      &kp L      &kp SINGLE_QUOTE                                                 &none   &none   &none   &none   &none   &none
-    &kp LSHFT  &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH   &trans                                       &none    &none   &none   &none   &none   &none   &none
-    &kp LWIN   &kp LCTRL  &kp LALT   &kp LEFT   &kp RIGHT                                                                           &none   &none   &none   &none   &none
-                                                                      &trans     &trans                      &none &none
-                                                                                 &lto MIRROR_DEFAULT PG_UP   &none
-                                                          &kp RETURN  &kp SPACE                                    &none    &none
-                                                                                 &lto MIRROR_NUMPAD PG_DN    &none
+    &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
+    &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp LBKT   &kp F12
+    &kp CAPS &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
+    &trans   &kp BSLH   &kp TILDE  &kp PIPE   &kp AMPS   &kp SEMI   &trans                         &trans   &kp FSLH   &kp ASTRK  &kp MINUS  &kp PLUS   &kp UNDER  &trans    
+    &trans   &trans     &trans     &trans     &trans                                                                   &trans     &trans     &trans     &trans     &trans
+                                                                   &trans &trans      &trans  &trans
+                                                                          &trans      &trans
+                                                        &trans     &trans                         &trans  &trans
+                                                                          &trans      &trans
                         >;
                 };
-                mirror_numpad {
+
+                numpad {
                         bindings = <
     &bootloader
     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12                                      &none    &none   &none   &none   &none   &none   &none
@@ -106,7 +92,5 @@ lto:hold_layer{
                                                                                  &lto MIRROR_NUMPAD PG_DN    &none
                         >;
                 };
-
-
         };
 };
