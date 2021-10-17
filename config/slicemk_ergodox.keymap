@@ -40,11 +40,11 @@ lto:hold_layer{
     &kp BSLH   &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &kp F1     &kp NUM_6 &kp NUM_7   &kp NUM_8  &kp NUM_9  &kp NUM_0  &kp MINUS
     &kp TAB    &kp Q       &kp W      &kp F      &kp P      &kp B      &kp F13                                       &kp F20    &kp J     &kp L       &kp U      &kp Y      &kp BSPC   &kp BSPC
     &kp ESC    &kp A       &kp R      &kp S      &kp T      &kp G                                                               &kp M     &kp N       &kp E      &kp I      &kp O      &kp RET
-    &kp LSHFT  &kp Z       &kp X      &kp C      &kp D      &kp V      &kp HOME                                      &kp END    &kp K     &kp H       &kp CMMA   &kp DOT    &kp RCTRL  &kp RSHFT
+    &kp LSHFT  &kp Z       &kp X      &kp C      &kp V      &kp B      &kp HOME                                      &kp END    &kp N     &kp M       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
     &kp DEL    &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
                                                                        &sl NUMPAD &sl MEDIA                 &ls 1 1   &kp RCTRL
                                                                                   &kp PG_UP                 &kp PG_DN
-                                                            &kp BSPC   &kp LGUI                                       &kp RET    &kp SPACE
+                                                            &sl MEDIA  &kp LSHFT                                      &kp SPACE &sl NUMPAD
                                                                                   &kp LCTRL                 &kp RALT
                         >;
                 };
