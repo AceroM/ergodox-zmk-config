@@ -45,7 +45,7 @@ lto:hold_layer{
                                                                        &sl NUMPAD &sl MEDIA                 &ls 1 1   &kp RCTRL
                                                                                   &kp PG_UP                 &kp PG_DN
                                                             &sl MEDIA  &kp LSHFT                                      &kp SPACE &sl NUMPAD
-                                                                                  &kp LCTRL                 &kp RALT
+                                                                                  &kp LGUI                 &kp RALT
                         >;
                 };
 
@@ -67,11 +67,11 @@ lto:hold_layer{
                 media {
                         bindings = <
     &bootloader
-    &trans         &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 0
-    &out OUT_USB   &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 1
-    &out OUT_BLE   &trans   &trans   &trans   &trans   &trans                                       &trans  &trans        &trans       &trans       &trans        &bt BT_SEL 2
-    &bt BT_CLR     &trans   &trans   &trans   &trans   &trans   &trans                     &trans   &trans  &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &kp C_BRI_MAX &bt BT_SEL 3
-    &out OUT_TOG   &trans   &trans   &trans   &trans                                                        &kp K_PREV    &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT    &bt BT_SEL 4
+    &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
+    &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp LBKT   &kp F12
+    &kp CAPS &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
+    &trans   &kp BSLH   &kp TILDE  &kp PIPE   &kp AMPS   &kp SEMI   &trans                         &trans   &kp FSLH   &kp ASTRK  &kp MINUS  &kp PLUS   &kp UNDER  &trans    
+    &trans   &trans     &trans     &trans     &trans                                                                   &trans     &trans     &trans     &trans     &trans
                                                                 &trans  &trans     &trans  &tog MEDIA
                                                                         &trans     &trans
                                                        &trans   &trans                     &trans   &kp K_PP
