@@ -44,7 +44,7 @@ lto:hold_layer{
     &kp DEL    &kp LALT    &kp GRAVE  &kp LBKT   &kp RBKT                                                                                 &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RGUI
                                                                        &sl NUMPAD &sl MEDIA                 &ls 1 1   &kp RCTRL
                                                                                   &kp PG_UP                 &kp PG_DN
-                                                            &sl MEDIA  &kp LSHFT                                      &kp SPACE &sl NUMPAD
+                                                            &kp LSHFT  &sl MEDIA                                      &sl NUMPAD &kp SPACE
                                                                                   &kp LGUI                 &kp RALT
                         >;
                 };
@@ -53,9 +53,9 @@ lto:hold_layer{
                         bindings = <
     &bootloader
     &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-    &trans   &kp EXCL   &kp AT     &kp LBRC   &kp RBRC   &kp PIPE   &trans                         &trans   &kp COLON  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp ASTRK  &kp F12
-    &kp CAPS &kp POUND  &kp DOLLAR &kp LPAR   &kp RPAR   &kp GRAVE                                          &kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp PLUS   &trans
-    &trans   &kp PRCNT  &kp CARET  &kp LBKT   &kp RBKT   &kp TILDE  &trans                         &trans   &kp PRCNT  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp FSLH   &trans    
+    &trans   &kp EXCL   &kp AT     &kp LBRC   &kp RBRC   &kp PIPE   &trans                         &trans   &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp ASTRK  &kp F12
+    &kp CAPS &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5                                          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PLUS   &trans
+    &trans   &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans                         &trans   &kp ESC    &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp FSLH   &trans    
     &trans   &trans     &trans     &trans     &trans                                                                   &kp UP     &kp DOWN   &kp DOT    &kp EQUAL  &trans
                                                                    &trans &trans      &tog NUMPAD &trans
                                                                           &trans      &trans
