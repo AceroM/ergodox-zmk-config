@@ -42,10 +42,10 @@ lto:hold_layer{
     &kp ESC    &kp A       &kp R      &kp S      &kp T      &kp G                                                               &kp M     &kp N       &kp E      &kp I      &kp O      &kp RET
     &kp LSHFT  &kp Z       &kp X      &kp C      &kp D      &kp V      &kp HOME                                      &kp END    &kp K     &kp H       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
     &kp LGUI   &kp LCTRL   &kp LALT   &kp LEFT   &kp RIGHT                                                                                &kp DOWN    &kp UP     &kp RALT   &kp RCTRL  &kp RGUI
-                                                                       &sl NUMPAD &sl SYMBOL                 &ls 1 1    &kp RCTRL
+                                                                       &sl F19    &sl SYMBOL                 &ls 1 1    &kp F19
                                                                                   &kp PG_UP                  &kp PG_DN
                                                              &kp BSPC  &sl SYMBOL                                       &kp TAB     &kp SPACE
-                                                                                  &kp F19                    &kp F19 
+                                                                                  &sl NUMPAD                 &sl NUMPAD 
                         >;
                 };
 
@@ -71,7 +71,7 @@ lto:hold_layer{
     &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp LBKT   &kp F12
     &kp CAPS &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
     &trans   &kp BSLH   &kp TILDE  &kp PIPE   &kp AMPS   &kp SEMI   &trans                         &trans   &kp FSLH   &kp ASTRK  &kp MINUS  &kp PLUS   &kp UNDER  &trans    
-    &trans   &trans     &trans     &trans     &trans                                                                   &trans     &trans     &trans     &trans     &trans
+    &trans   &trans     &trans     &kp HOME   &kp END                                                                  &kp PG_DN  &kp PG_UP  &trans     &trans     &trans
                                                                 &trans  &trans     &trans  &tog SYMBOL
                                                                         &trans     &trans
                                                        &trans   &trans                     &trans   &kp SPACE
