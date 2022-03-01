@@ -68,7 +68,7 @@ lto:hold_layer{
                         bindings = <
     &bootloader
     &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-    &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp LBKT   &kp F12
+    &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp RBKT   &kp F12
     &trans   &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
     &trans   &kp BSLH   &kp TILDE  &kp PIPE   &kp AMPS   &kp SEMI   &trans                         &trans   &kp FSLH   &kp ASTRK  &kp MINUS  &kp PLUS   &kp UNDER  &trans    
     &trans   &trans     &trans     &kp HOME   &kp END                                                                  &kp PG_DN  &kp PG_UP  &trans     &trans     &trans
