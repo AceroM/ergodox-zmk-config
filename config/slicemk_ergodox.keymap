@@ -37,15 +37,15 @@ lto:hold_layer{
                 default {
                         bindings = <
     &bootloader
-    &kp BSLH   &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &kp F1     &kp NUM_6 &kp NUM_7   &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans
+    &kp CAPS   &kp NUM_1   &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5  &kp PRSC                                      &kp F1     &kp NUM_6 &kp NUM_7   &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans
     &kp TAB    &kp Q       &kp W      &kp F      &kp P      &kp B      &kp F13                                       &kp F20    &kp J     &kp L       &kp U      &kp Y      &kp APOS   &trans
     &kp ESC    &kp A       &kp R      &kp S      &kp T      &kp G                                                               &kp M     &kp N       &kp E      &kp I      &kp O      &kp RET
     &kp LSHFT  &kp Z       &kp X      &kp C      &kp D      &kp V      &kp HOME                                      &kp END    &kp K     &kp H       &kp CMMA   &kp DOT    &kp FSLH   &kp RSHFT
     &kp LGUI   &kp LCTRL   &kp LALT   &kp LEFT   &kp RIGHT                                                                                &kp DOWN    &kp UP     &kp RALT   &kp RCTRL  &kp RGUI
-                                                                       &sl F19    &sl SYMBOL                 &ls 1 1    &kp F19
+                                                                       &kp F19    &sl SYMBOL                 &ls 1 1    &kp F19
                                                                                   &kp PG_UP                  &kp PG_DN
                                                              &kp BSPC  &sl SYMBOL                                       &kp TAB     &kp SPACE
-                                                                                  &sl NUMPAD                 &sl NUMPAD 
+                                                                                  &sl NUMPAD                 &kp F19 
                         >;
                 };
 
@@ -54,7 +54,7 @@ lto:hold_layer{
     &bootloader
     &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
     &trans   &kp EXCL   &kp AT     &kp LBRC   &kp RBRC   &kp PIPE   &trans                         &trans   &kp UNDER  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp ASTRK  &kp F12
-    &kp CAPS &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5                                          &kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp PLUS   &trans
+    &trans   &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5                                          &kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp PLUS   &trans
     &trans   &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &trans                         &trans   &kp CMMA   &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp FSLH   &trans    
     &trans   &trans     &trans     &kp HOME   &kp END                                                                  &kp PG_DN  &kp PG_UP  &kp DOT    &kp EQUAL  &trans
                                                                    &trans &trans      &tog NUMPAD &trans
@@ -69,7 +69,7 @@ lto:hold_layer{
     &bootloader
     &trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                         &trans   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
     &trans   &kp SQT    &kp DQT    &kp CARET  &kp QMARK  &kp GRAVE  &trans                         &trans   &kp LBKT   &kp LT     &kp EQUAL  &kp GT     &kp LBKT   &kp F12
-    &kp CAPS &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
+    &trans   &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                                          &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &trans
     &trans   &kp BSLH   &kp TILDE  &kp PIPE   &kp AMPS   &kp SEMI   &trans                         &trans   &kp FSLH   &kp ASTRK  &kp MINUS  &kp PLUS   &kp UNDER  &trans    
     &trans   &trans     &trans     &kp HOME   &kp END                                                                  &kp PG_DN  &kp PG_UP  &trans     &trans     &trans
                                                                 &trans  &trans     &trans  &tog SYMBOL
